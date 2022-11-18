@@ -1,0 +1,125 @@
+body{
+    background-repeat: no-repeat;   
+    background-size: 113%; /*Scroll -> el texto se movera contigo; Fixed -> imagene estatica*/
+    margin: 0;
+    background-image: url(./image/cuaderno.jpg);
+}
+
+header {
+    color: #eebd00;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #d2b984;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 17px 0 ;
+    display: flex;
+
+    width: 100%;
+    background-image: url("./image/arcoiris.jpg");  
+}
+
+#logo{
+    display: flex;
+    text-align: center;
+}
+
+.logo-img{
+    height: 100px;
+    margin: 0px 0px 0px 0px;
+    float:none;
+    display: inline-block;
+}
+
+#titulo{
+    margin-left: 0px;
+    display:inline-block
+}
+
+nav {
+    margin: 4px 30px 0px 10px;
+    display: block;
+    
+}
+
+#lalo, #lale, #lali, #lalo {
+    box-shadow: 1px 3px 20px 1px  rgba(92, 91, 91, 0.76);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fcf6f602;
+    color: #e0c1c1; 
+    padding: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.clockdate-wrapper {
+    background-color: #fdd569d5;
+    padding:30px 40px 30px 40px;
+    max-width:400px;
+    width:100%;
+    text-align:center;
+    border-radius:10px;
+    margin:130px 10px 10px 500px;
+}
+#clock{
+    background-color: #fdd5697c;
+    font-family: sans-serif;
+    font-size:80px;
+    text-shadow:0px 0px 1px #fff;
+    color:#fff;
+}
+#clock span {
+    color:#fff;
+    text-shadow:0px 0px 1px #333;
+    font-size:40px;
+    position:relative;
+    top:-27px;
+    left:-10px;
+}
+#date {
+    margin-top: 20px;
+    letter-spacing:1px;
+    font-size:35px;
+    font-family:arial,sans-serif;
+    color:#fff;
+}
+
+footer {
+    background-image: url(./image/arcoiris.jpg); 
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10px 0px; 
+    bottom: 0;
+    position:fixed;
+    width: 100%;
+    height: auto;
+    background-size: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pfoot {
+    font-size: 19px;
+    text-align: left;
+    margin:0px 0px 0px 10px;
+    color: #8c2bec
+}
+
+#face, #inst, #twi, #whats, #link, #dis{
+    color: #8c2bec;
+    display: flex;
+    margin-right: 10px;
+}
+#inst{
+    padding: 3px 10px 0px 0px
+}
+#lulu{
+    box-shadow: 1px 3px 20px 1px  rgba(92, 91, 91, 0.76);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fcf6f602;
+    color: #e0c1c1; 
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px 10px 5px 5px
+}

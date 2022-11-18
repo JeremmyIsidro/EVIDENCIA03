@@ -1,0 +1,123 @@
+.calculadora{
+    display:block;
+    padding:20px;
+    margin:20px 0px 20px 510px;
+    background-image: linear-gradient(10deg, #ffdb8c 0, #ffdf8a 3.33%, #f7e38a 6.67%, #ebe68c 10%, #dfea8f 13.33%, #d2ed94 16.67%, #c5f09b 20%, #b7f2a4 23.33%, #a8f5ad 26.67%, #9af6b7 30%, #8af8c3 33.33%, #7bf9cf 36.67%, #6afadb 40%, #59fae7 43.33%, #48faf3 46.67%, #38faff 50%, #2bf9ff 53.33%, #27f8ff 56.67%, #30f7ff 60%, #40f5ff 63.33%, #54f3ff 66.67%, #69f0ff 70%, #7eedff 73.33%, #93eaff 76.67%, #a7e6ff 80%, #bbe2ff 83.33%, #cddeff 86.67%, #dfd9ff 90%, #efd5ff 93.33%, #fed1ff 96.67%, #ffcdff 100%);
+    width:400px;
+    height:650px;
+    border-radius: 25px;
+    position:relative;
+    }
+.calculadora td button{
+    display:block;
+    width:85px;
+    height: 85px;
+    font-size: 30px;
+    }
+
+#resultado{
+    display:block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 80px;
+    width:350px;
+    height: 130px;
+    line-height: 100px;
+    background-color:#fff;
+    border-radius: 25px;
+    overflow-y: scroll;
+    }
+body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-image: url("./image/cuaderno.jpg");
+        background-repeat: no repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        margin: 0;
+    }
+    
+    header {
+        color: #eebd00;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px #d2b984;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 17px 0 ;
+        display: flex;
+        position: relative;
+        width: 100%;
+        background-image: url("./image/arcoiris.jpg");  
+    }
+    
+    #logo{
+        display: flex;
+        text-align: center;
+    }
+    
+    .logo-img{
+        height: 100px;
+        margin: 0px 0px 0px 0px;
+        float:none;
+        display: inline-block;
+    }
+    
+    #titulo{
+        margin-left: 0px;
+        display:inline-block
+    }
+    
+    nav {
+        margin: 4px 30px 0px 10px;
+        display: block;
+        
+    }
+
+    
+#lalo, #lale, #lali, #lalo {
+    box-shadow: 1px 3px 20px 1px  rgba(92, 91, 91, 0.76);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fcf6f602;
+    color: #e0c1c1; 
+    padding: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0px; 
+    position:relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    background-image: linear-gradient(130deg, #ffb484 0, #ffb978 3.33%, #ffbf6e 6.67%, #ffc566 10%, #ffcb60 13.33%, #ffd15c 16.67%, #f2d65b 20%, #e3db5d 23.33%, #d3e062 26.67%, #c2e469 30%, #b0e773 33.33%, #9ceb7e 36.67%, #87ed8b 40%, #6ff099 43.33%, #51f2a8 46.67%, #1ef3b8 50%, #00f4c8 53.33%, #00f5d9 56.67%, #00f5e9 60%, #00f5fa 63.33%, #00f4ff 66.67%, #00f3ff 70%, #00f2ff 73.33%, #00f0ff 76.67%, #00edff 80%, #00eaff 83.33%, #00e6ff 86.67%, #1be2ff 90%, #63ddff 93.33%, #8bd8ff 96.67%, #abd2ff 100%);
+
+}
+
+#pfoot {
+    font-size: 25px;
+    text-align: left;
+    margin:0px 0px 0px 10px;
+    color: #faf5f5d5;
+}
+
+#face, #inst, #twi, #whats, #link, #dis{
+    color: #faf5f5d5;
+    margin-right: 10px;
+    padding: 10px;
+}
+#lulu{
+    box-shadow: 1px 3px 20px 1px  rgba(92, 91, 91, 0.76);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fcf6f602;
+    color: #e0c1c1; 
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px 10px 5px 5px
+}
+
+
+

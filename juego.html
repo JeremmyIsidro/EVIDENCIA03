@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JUEGO UWU</title>
+    <link rel="stylesheet" href="./css/juego.css">
+    <style>* { padding: 0; margin: 0; } canvas { background: #eee; display: block; margin: 0 auto; }</style>
+    <script defer src="./img/friconix (1).js"> </script>
+    <script src="./js/juego.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./img/javascript.png" alt="logo de javascript" class="logo-img">
+            <h1 id="titulo">JavaScript</h1>
+        </div>
+        <nav>
+                <a id="lalo" href="./index.html">HISTORIA</a> 
+                <a id="lale" href="./ejercicio01.html">EJERCICIO 01</a> 
+                <a id="lali" href="./ejercicio02.html">EJERCICIO 02</a> 
+                <a id="lalo" href="./ejerciciopropio.html">EJERCICIO PROPIO</a> 
+        </nav>
+    </header>
+    
+
+<canvas id="myCanvas" width="480" height="320"></canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var ballRadius = 10;
+var x = canvas.width/2;
+var y = canvas.height-30;
+var dx = 2;
+var dy = -2;
+var paddleHeight = 10;
+var paddleWidth = 75;
+var paddleX = (canvas.width-paddleWidth)/2;
+var rightPressed = false;
+var leftPressed = false;
+var brickRowCount = 5;
+var brickColumnCount = 3;
+var brickWidth = 75;
+var brickHeight = 20;
+var brickPadding = 10;
+var brickOffsetTop = 30;
+var brickOffsetLeft = 30;
+
+var bricks = [];
+for(var c=0; c<brickColumnCount; c++) {
+    bricks[c] = [];
+    for(var r=0; r<brickRowCount; r++) {
+        bricks[c][r] = { x: 0, y: 0, status: 1 };
+    }
+}
+
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+
+function keyDownHandler(e) {
+    if(e.code  == "ArrowRight") {
+        rightPressed = true;
+    }
+    else if(e.code == 'ArrowLeft') {
+        leftPressed = true;
+    }
+}
+function keyUpHandler(e) {
+    if(e.code  == "ArrowRight") {
+        rightPressed = false;
+    }
+    else if(e.code == 'ArrowLeft') {
+        leftPressed = false;
+    }
+}
+function collisionDetection() {
+    for(var c=0; c<brickColumnCount; c++) {
+        for(var r=0; r<brickRowCount; r++) {
+            var b = bricks[c][r];
+            if(b.status == 1) {
+                if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) {
+                    dy = -dy;
+                    b.status = 0;
+                }
+            }
+        }
+    }
+}
+
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+}
+function drawPaddle() {
+    ctx.beginPath();
+    ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+}
+function drawBricks() {
+    for(var c=0; c<brickColumnCount; c++) {
+        for(var r=0; r<brickRowCount; r++) {
+            if(bricks[c][r].status == 1) {
+                var brickX = (r*(brickWidth+brickPadding))+brickOffsetLeft;
+                var brickY = (c*(brickHeight+brickPadding))+brickOffsetTop;
+                bricks[c][r].x = brickX;
+                bricks[c][r].y = brickY;
+                ctx.beginPath();
+                ctx.rect(brickX, brickY, brickWidth, brickHeight);
+                ctx.fillStyle = "#0095DD";
+                ctx.fill();
+                ctx.closePath();
+            }
+        }
+    }
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBricks();
+    drawBall();
+    drawPaddle();
+    collisionDetection();
+
+    if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+        dx = -dx;
+    }
+    if(y + dy < ballRadius) {
+        dy = -dy;
+    }
+    else if(y + dy > canvas.height-ballRadius) {
+        if(x > paddleX && x < paddleX + paddleWidth) {
+            dy = -dy;
+        }
+        else {
+            alert("GAME OVER");
+            document.location.reload();
+        }
+    }
+
+    if(rightPressed && paddleX < canvas.width-paddleWidth) {
+        paddleX += 7;
+    }
+    else if(leftPressed && paddleX > 0) {
+        paddleX -= 7;
+    }
+
+    x += dx;
+    y += dy;
+}
+
+setInterval(draw, 10);
+</script>
+
+<footer>
+    <strong><p id="pfoot">Pagina creada por Jeremmy Isidro <br><br>
+    Derechos reservados <br><br>
+    Número de contacto: +51 941552800</p></strong>
+    <ol>
+    <a id="face" href="https://www.facebook.com/" target="_blank"><i class="fi-snsuxl-facebook"></i></a>
+    <a id="inst" href="https://www.instagram.com/" target="_blank"><i class="fi-xnsuxl-instagram"></i></a>
+    <a id="twi" href="https://twitter.com/" target="_blank"><i class="fi-xnsuxl-twitter-solid"></i></a>
+    <a id="whats" href="https://web.whatsapp.com/" target="_blank"><i class="fi-xnsuxl-whatsapp"></i></a>
+    <a id="link" href="https://linkedin.com/" target="_blank"><i class="fi-xnsuxl-linkedin"></i></a>
+    <a id="dis" href="https://discord.com/" target="_blank"><i class="fi-xnsuxl-discord-alt"></i></a>
+    <a id="lulu" href="./juego.html">PLAY</a> 
+    </ol>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+canvas { background: rgba(238, 238, 238, 0.521); }
+body{
+    background-repeat: no-repeat;   
+    background-size: 113%; /*Scroll -> el texto se movera contigo; Fixed -> imagene estatica*/
+    margin: 0;
+    background-image: url(./image/cuaderno.jpg);
+}
+
+header {
+    color: #eebd00;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #d2b984;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 17px 0 ;
+    display: flex;
+
+    width: 100%;
+    background-image: url("./image/arcoiris.jpg");  
+}
+
+#logo{
+    display: flex;
+    text-align: center;
+}
+
+.logo-img{
+    height: 100px;
+    margin: 0px 0px 0px 0px;
+    float:none;
+    display: inline-block;
+}
+
+#titulo{
+    margin-left: 0px;
+    display:inline-block
+}
+
+nav {
+    margin: 4px 30px 0px 10px;
+    display: block;
+    
+}
+
+#lalo, #lale, #lali, #lalo {
+    box-shadow: 1px 3px 20px 1px  rgba(92, 91, 91, 0.76);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fcf6f602;
+    color: #e0c1c1; 
+    padding: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+#lulu{
+    box-shadow: 1px 3px 20px 1px  rgba(92, 91, 91, 0.76);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fcf6f602;
+    color: #e0c1c1; 
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px 10px 5px 5px
+}
+
+footer {
+    background-image: url(./image/arcoiris.jpg); 
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10px 0px; 
+    bottom: 0;
+    position:fixed;
+    width: 100%;
+    height: auto;
+    background-size: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pfoot {
+    font-size: 19px;
+    text-align: left;
+    margin:0px 0px 0px 10px;
+    color: #8c2bec
+}
+
+#face, #inst, #twi, #whats, #link, #dis{
+    color: #8c2bec;
+    display: flex;
+    margin-right: 10px;
+}
+#inst{
+    padding: 3px 10px 0px 0px
+}

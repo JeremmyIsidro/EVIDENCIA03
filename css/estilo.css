@@ -1,0 +1,161 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("./image/cuaderno.jpg");
+    background-repeat: no repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+header {
+    color: #eebd00;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #d2b984;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 17px 0 ;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-image: url("./image/arcoiris.jpg");  
+}
+
+#logo{
+    display: flex;
+    text-align: center;
+}
+
+.logo-img{
+    height: 100px;
+    margin: 0px 0px 0px 0px;
+    float:none;
+    display: inline-block;
+}
+
+#titulo{
+    margin-left: 0px;
+    display:inline-block
+}
+
+nav {
+    margin: 4px 30px 0px 10px;
+    display: block;
+    
+}
+
+#lalo, #lale, #lali, #lalo {
+    box-shadow: 1px 3px 20px 1px  rgba(92, 91, 91, 0.76);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fcf6f602;
+    color: #e0c1c1; 
+    padding: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+h3{
+    border-bottom: #8405be 3px solid;
+    margin: 10px 0px 0px 0px;
+}
+
+p,#especifiaciones,#historia{
+    font-size: 20px;
+    color:rgb(129, 128, 128) ;
+}
+
+#uwu{
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+.owo{
+    color: #cc01ff;
+    font-size: 30px;
+    text-decoration:underline ;
+}
+
+
+.aindice{
+    text-decoration: none;
+    color: #c706eecc;
+    margin: 0px 0px 0px 0px;
+}
+
+.alink{
+    color: blue;
+    font-size: 100%;
+    padding-left: 0px;
+}
+
+
+#divtext{
+    padding: 0 0px 0 10px;
+    box-shadow: 5px 5px 10px 0.5px  rgb(92, 91, 91);
+    border-radius: 22px;
+    float: right;
+    width: 60%;
+    margin: 200px 50px 261px 0px ;
+    position:static;
+    background-color: rgba(255, 255, 255, 0.596);
+}
+
+#divindi{
+    box-shadow: 5px 5px 10px 0.5px  rgb(92, 91, 91);
+    background-color: rgba(255, 255, 255, 0.596);
+    color:#8405be;
+    float: left;
+    border-radius: 22px;
+    width: 20%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px 0px 10px 100px ;
+    position: fixed;   
+    font-size: 22px;
+}   
+
+
+footer {
+    background-image: url(./image/arcoiris.jpg); 
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 10px 0px; 
+    bottom: 0;
+    position:fixed;
+    width: 100%;
+    height: auto;
+    background-size: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pfoot {
+    font-size: 19px;
+    text-align: left;
+    margin:0px 0px 0px 10px;
+    color: #8c2bec
+}
+
+#face, #inst, #twi, #whats, #link, #dis{
+    color: #8c2bec;
+    display: flex;
+    margin-right: 10px;
+}
+#inst{
+    padding: 3px 10px 0px 0px
+}
+
+#lulu{
+    box-shadow: 1px 3px 20px 1px  rgba(92, 91, 91, 0.76);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fcf6f602;
+    color: #e0c1c1; 
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px 10px 5px 5px
+}
